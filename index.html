@@ -6,6 +6,11 @@
 <meta name="description" content="Flux Collect - plataforma de inteligencia de cobranzas de Moovi Solutions: predice quien paga, cuando y por que canal.">
 <style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Flux Collect</title>
+<!-- El isotipo va incrustado como data URI y no como archivo suelto: la
+     página es un solo HTML que anda con doble clic, y un href a
+     /favicon.svg se rompe fuera del servidor. Es el mismo dibujo que
+     flux-collect-icono.svg y que el logo de acá abajo. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%22163.43%20397.04%20233.9%20233.9%22%3E%3Crect%20x=%22163.43%22%20y=%22397.04%22%20width=%22233.9%22%20height=%22233.9%22%20rx=%2246%22%20fill=%22%23eb5f22%22/%3E%3Cg%20fill=%22%23fff%22%3E%3Cpolygon%20points=%22239.91%20577.41%20207.55%20577.46%20207.59%20435.62%20309.38%20435.64%20309.35%20463.42%20239.86%20463.47%20239.93%20488.28%20286.82%20488.29%20286.97%20507.48%20286.8%20516.05%20271.08%20516.24%20239.89%20516.08%20239.91%20577.41%22/%3E%3Cpolygon%20points=%22328.62%20577.47%20328.62%20505.37%20354.5%20505.33%20354.5%20577.47%20328.62%20577.47%22/%3E%3Cpolygon%20points=%22291.58%20577.49%20291.5%20526.29%20317.11%20526.26%20317.11%20577.48%20291.58%20577.49%22/%3E%3Cpolygon%20points=%22254.04%20577.46%20254.05%20546.52%20279.86%20546.52%20279.83%20577.48%20254.04%20577.46%22/%3E%3C/g%3E%3Cline%20x1=%22213.17%22%20y1=%22589.53%22%20x2=%22348.84%22%20y2=%22589.53%22%20fill=%22none%22%20stroke=%22%23fff%22%20stroke-width=%2214.61%22%20stroke-linecap=%22square%22/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Barlow+Semi+Condensed:wght@700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -166,9 +171,13 @@ h2{ font-size:var(--step-3); }
 /* ---- marca Flux Collect ---------------------------------------- */
 .logo{ display:flex; align-items:center; gap:.6rem; text-decoration:none; }
 .logo svg{ display:block; }
-.mark rect{ fill:none; stroke:currentColor; }
-.mark .fx{ fill:var(--flare); }
-.mark line{ stroke:var(--flare); }
+/* El isotipo va en cuadro relleno, no en marco fino: a 26px el trazo
+   del marco se rompe y la marca queda flotando. Es el mismo dibujo que
+   el favicon y que la app. El naranja sigue el tema (en oscuro aclara),
+   la F va calada en blanco y sobre los dos naranjas contrasta. */
+.mark rect{ fill:var(--flare); }
+.mark .fx{ fill:#fff; }
+.mark line{ stroke:#fff; }
 .logo-txt{
   font-family:"Barlow Semi Condensed","Barlow","Segoe UI Semibold",system-ui,sans-serif;
   font-weight:700;
@@ -522,8 +531,8 @@ footer{ background:var(--nardo-deep); padding-block:2.2rem; border-top:1px solid
 <header class="nav">
   <div class="wrap nav-in">
     <a class="logo" href="#top" aria-label="Flux Collect, inicio">
-      <svg class="mark" width="30" height="32" viewBox="174 398.5 213 231" fill="none" aria-hidden="true">
-        <rect x="178.06" y="402.54" width="204.64" height="222.9" rx="12" ry="12" stroke-width="7"/>
+      <svg class="mark" width="32" height="32" viewBox="163.43 397.04 233.9 233.9" aria-hidden="true">
+        <rect x="163.43" y="397.04" width="233.9" height="233.9" rx="46"/>
         <g class="fx">
           <polygon points="239.91 577.41 207.55 577.46 207.59 435.62 309.38 435.64 309.35 463.42 239.86 463.47 239.93 488.28 286.82 488.29 286.97 507.48 286.8 516.05 271.08 516.24 239.89 516.08 239.91 577.41"/>
           <polygon points="328.62 577.47 328.62 505.37 354.5 505.33 354.5 577.47 328.62 577.47"/>
@@ -1069,8 +1078,8 @@ footer{ background:var(--nardo-deep); padding-block:2.2rem; border-top:1px solid
 <footer>
   <div class="wrap foot-in">
     <a class="logo" href="#top" aria-label="Flux Collect, volver arriba">
-      <svg class="mark" width="26" height="28" viewBox="174 398.5 213 231" fill="none" aria-hidden="true">
-        <rect x="178.06" y="402.54" width="204.64" height="222.9" rx="12" ry="12" stroke-width="7"/>
+      <svg class="mark" width="28" height="28" viewBox="163.43 397.04 233.9 233.9" aria-hidden="true">
+        <rect x="163.43" y="397.04" width="233.9" height="233.9" rx="46"/>
         <g class="fx">
           <polygon points="239.91 577.41 207.55 577.46 207.59 435.62 309.38 435.64 309.35 463.42 239.86 463.47 239.93 488.28 286.82 488.29 286.97 507.48 286.8 516.05 271.08 516.24 239.89 516.08 239.91 577.41"/>
           <polygon points="328.62 577.47 328.62 505.37 354.5 505.33 354.5 577.47 328.62 577.47"/>
