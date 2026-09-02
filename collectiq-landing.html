@@ -23,15 +23,16 @@
   --ink-faint:  #74746D;
   --line:       rgba(29,29,27,.15);
   --line-soft:  rgba(29,29,27,.08);
-  --flare:      #EB5F22;
-  --flare-deep: #A83607;
-  --flare-wash: rgba(235,95,34,.10);
+  --flare:      #8C68B1;
+  --flare-deep: #5B3A80;
+  --flare-wash: rgba(140,104,177,.10);
+  --on-flare:   #FFFFFF;
   --signal:     #0E6F58;
   --alert:      #B4243A;
   --shadow:     0 1px 2px rgba(29,29,27,.05), 0 16px 34px -20px rgba(29,29,27,.34);
   --shadow-lg:  0 2px 3px rgba(29,29,27,.05), 0 40px 80px -38px rgba(29,29,27,.46);
   --grid-dot:   rgba(29,29,27,.09);
-  --glow:       rgba(235,95,34,.30);
+  --glow:       rgba(140,104,177,.30);
   --sheen:      rgba(255,255,255,.9);
 
   --step--1: clamp(.72rem, .69rem + .12vw, .78rem);
@@ -58,15 +59,16 @@
     --ink-faint:  #868D8A;
     --line:       rgba(236,238,234,.16);
     --line-soft:  rgba(236,238,234,.08);
-    --flare:      #FF7038;
-    --flare-deep: #FFA277;
-    --flare-wash: rgba(255,112,56,.14);
+    --flare:      #B890DF;
+    --flare-deep: #D4BAEE;
+    --flare-wash: rgba(184,144,223,.14);
+    --on-flare:   #1B0F2A;
     --signal:     #35C79C;
     --alert:      #FF6B7E;
     --shadow:     0 1px 1px rgba(0,0,0,.5), 0 18px 40px -22px rgba(0,0,0,.9);
     --shadow-lg:  0 2px 2px rgba(0,0,0,.5), 0 44px 90px -40px rgba(0,0,0,1);
     --grid-dot:   rgba(236,238,234,.09);
-    --glow:       rgba(255,112,56,.34);
+    --glow:       rgba(184,144,223,.34);
     --sheen:      rgba(255,255,255,.035);
   }
 }
@@ -82,15 +84,16 @@
   --ink-faint:  #868D8A;
   --line:       rgba(236,238,234,.16);
   --line-soft:  rgba(236,238,234,.08);
-  --flare:      #FF7038;
-  --flare-deep: #FFA277;
-  --flare-wash: rgba(255,112,56,.14);
+  --flare:      #B890DF;
+  --flare-deep: #D4BAEE;
+  --flare-wash: rgba(184,144,223,.14);
+  --on-flare:   #1B0F2A;
   --signal:     #35C79C;
   --alert:      #FF6B7E;
   --shadow:     0 1px 1px rgba(0,0,0,.5), 0 18px 40px -22px rgba(0,0,0,.9);
   --shadow-lg:  0 2px 2px rgba(0,0,0,.5), 0 44px 90px -40px rgba(0,0,0,1);
   --grid-dot:   rgba(236,238,234,.09);
-  --glow:       rgba(255,112,56,.34);
+  --glow:       rgba(184,144,223,.34);
   --sheen:      rgba(255,255,255,.035);
 }
 
@@ -192,7 +195,7 @@ h2{ font-size:var(--step-3); }
   transition:transform .16s cubic-bezier(.2,.8,.3,1), box-shadow .16s, background .16s;
 }
 .btn:hover{ transform:translateY(-2px); box-shadow:0 10px 22px -12px rgba(29,29,27,.55); }
-.btn-flare{ background:var(--flare); border-color:var(--flare); color:#1A0A03; }
+.btn-flare{ background:var(--flare); border-color:var(--flare); color:var(--on-flare); }
 .btn-flare:hover{ box-shadow:0 12px 30px -10px var(--glow); }
 .btn-ghost{ background:transparent; color:var(--ink); border-color:var(--line); }
 .btn-ghost:hover{ border-color:var(--ink); }
@@ -586,17 +589,17 @@ footer{ background:var(--nardo-deep); padding-block:2.2rem; border-top:1px solid
           <svg viewBox="0 0 320 92" width="100%" height="92" role="img" aria-label="Probabilidad de pago acumulada: 21% a 5 días, 68% a 30 días">
             <defs>
               <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#EB5F22" stop-opacity=".34"/>
-                <stop offset="100%" stop-color="#EB5F22" stop-opacity="0"/>
+                <stop offset="0%" stop-color="#8C68B1" stop-opacity=".34"/>
+                <stop offset="100%" stop-color="#8C68B1" stop-opacity="0"/>
               </linearGradient>
             </defs>
             <g stroke="currentColor" opacity=".14" stroke-width="1">
               <line x1="0" y1="20" x2="320" y2="20"/><line x1="0" y1="48" x2="320" y2="48"/><line x1="0" y1="76" x2="320" y2="76"/>
             </g>
             <path d="M4 82 L64 66 L124 50 L184 39 L244 28 L310 22 L310 88 L4 88 Z" fill="url(#fill)"/>
-            <path d="M4 82 L64 66 L124 50 L184 39 L244 28 L310 22" fill="none" stroke="#EB5F22" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-            <circle cx="310" cy="22" r="4" fill="#EB5F22"/>
-            <circle cx="310" cy="22" r="8" fill="#EB5F22" opacity=".2"/>
+            <path d="M4 82 L64 66 L124 50 L184 39 L244 28 L310 22" fill="none" stroke="#8C68B1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="310" cy="22" r="4" fill="#8C68B1"/>
+            <circle cx="310" cy="22" r="8" fill="#8C68B1" opacity=".2"/>
           </svg>
           <figcaption><span>5 d</span><span>10 d</span><span>15 d</span><span>20 d</span><span>30 d</span><span>+30</span></figcaption>
         </figure>
@@ -879,15 +882,15 @@ footer{ background:var(--nardo-deep); padding-block:2.2rem; border-top:1px solid
               <rect x="154" y="70" width="14" height="50" rx="1"/>
               <rect x="182" y="58" width="14" height="62" rx="1"/>
             </g>
-            <g fill="#EB5F22" opacity=".5">
+            <g fill="#8C68B1" opacity=".5">
               <rect x="210" y="54" width="14" height="66" rx="1"/>
               <rect x="238" y="48" width="14" height="72" rx="1"/>
               <rect x="266" y="42" width="14" height="78" rx="1"/>
               <rect x="294" y="34" width="14" height="86" rx="1"/>
             </g>
             <path d="M21 96 L49 88 L77 78 L105 82 L133 66 L161 70 L189 58 L217 54 L245 48 L273 42 L301 34"
-                  fill="none" stroke="#EB5F22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="301" cy="34" r="4" fill="#EB5F22"/>
+                  fill="none" stroke="#8C68B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="301" cy="34" r="4" fill="#8C68B1"/>
           </svg>
 
           <div class="nba" style="margin-top:.9rem">
@@ -1160,9 +1163,9 @@ footer{ background:var(--nardo-deep); padding-block:2.2rem; border-top:1px solid
       }
       if (p.hot) {
         var pulse = 0.45 + 0.3 * Math.sin(t * 2.4 + p.ph);
-        ctx.fillStyle = "rgba(235,95,34," + pulse.toFixed(3) + ")";
+        ctx.fillStyle = "rgba(140,104,177," + pulse.toFixed(3) + ")";
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r + 0.7, 0, 6.284); ctx.fill();
-        ctx.fillStyle = "rgba(235,95,34,.10)";
+        ctx.fillStyle = "rgba(140,104,177,.10)";
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r + 6, 0, 6.284); ctx.fill();
       } else {
         ctx.fillStyle = base + ".23)";
