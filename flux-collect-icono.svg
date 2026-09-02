@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="163.43 397.04 233.9 233.9" width="256" height="256" role="img" aria-labelledby="t">
+  <title id="t">Flux Collect</title>
+  <!-- Isotipo Flux Collect. Mismo dibujo que la marca incrustada en index.html.
+       Violeta C35 M45 Y0 K0 del archivo de Illustrator; la F, las barras y la
+       regla van caladas en blanco, no pintadas encima. -->
+  <rect x="163.43" y="397.04" width="233.9" height="233.9" rx="46" fill="#AC92C7"/>
+  <g fill="#fff">
+    <polygon points="239.91 577.41 207.55 577.46 207.59 435.62 309.38 435.64 309.35 463.42 239.86 463.47 239.93 488.28 286.82 488.29 286.97 507.48 286.8 516.05 271.08 516.24 239.89 516.08 239.91 577.41"/>
+    <polygon points="328.62 577.47 328.62 505.37 354.5 505.33 354.5 577.47 328.62 577.47"/>
+    <polygon points="291.58 577.49 291.5 526.29 317.11 526.26 317.11 577.48 291.58 577.49"/>
+    <polygon points="254.04 577.46 254.05 546.52 279.86 546.52 279.83 577.48 254.04 577.46"/>
+  </g>
+  <line x1="213.17" y1="589.53" x2="348.84" y2="589.53" stroke="#fff" stroke-width="14.61" stroke-linecap="square"/>
+</svg>
